@@ -80,5 +80,6 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
 });
 
 // ===== تشغيل البوت =====
-client.login("MTQ3NzkwMTY1ODkwMDkyMjM4OA.GR85yK.itQQULlvuM5v3SYFJft2Iyo5etgOVnJVyoXoyc");
+client.login(process.env.TOKEN);
+
 
