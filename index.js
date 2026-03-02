@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   res.send("Bot is running!");
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Web server is running");
 });
 
@@ -81,5 +81,6 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
 
 // ===== تشغيل البوت =====
 client.login(process.env.TOKEN);
+
 
 
